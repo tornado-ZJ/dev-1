@@ -1,42 +1,8 @@
 ---在进入游戏时就读表 并将表进行适配111
-------------------------------------------------------cfg_qianghuadz--------------------------
-local cfg = SL:RequireCsvCfg("cfg_qianghuadz")   --强化.lua
-local qh_tab = {}
-for k, v in ipairs(cfg) do
-    qh_tab[v.type] = qh_tab[v.type] or {}
-    qh_tab[v.type][v.level] = qh_tab[v.type][v.level] or {}
-    qh_tab[v.type][v.level] = {name=v.name,cost=v.cost,cgjl=v.cgjl,jiacheng=v.jiacheng,attribute=v.attribute,itemid=v.itemid}
-end
-cfg_qianghuadz = qh_tab
-
-------------------------------------------------------cfg_zhuansheng--------------------------
-local cfg = SL:RequireCsvCfg("cfg_zhuansheng")   --转生.lua
-cfg_zhuansheng = cfg
 
 ------------------------------------------------------cfg_npcfunction--------------------------
 local cfg = SL:RequireGameCfg("cfg_npclist")   --GUIinit.lua 当前方法执行 npc点击关联功能
 cfg_npclist = cfg
-
-------------------------------------------------------cfg_hunqi--------------------------
-local cfg = SL:RequireCsvCfg("cfg_hunqi")   --tejie.lua 当前方法执行 npc点击关联功能
-local hun_tab = {}
-for k, v in ipairs(cfg) do
-    hun_tab[v.type] = hun_tab[v.type] or {}
-    hun_tab[v.type][v.level] = hun_tab[v.type][v.level] or {}
-    hun_tab[v.type][v.level] = {name=v.name,cost=v.cost}
-
-end
-cfg_hunqi = hun_tab
-----------------------------------------------------cfg_kuangbao--------
-
-------------------------------------------------------cfg_sj--------------------------
-local cfg = SL:RequireCsvCfg("cfg_sj")   --沙城捐献.lua
-cfg_sj = cfg
-------------------------------------------------------cfg_chenghao--------------------------
-local cfg = SL:RequireCsvCfg("cfg_chenghao")   --称号.lua
-cfg_chenghao = cfg
-
-
 
 --转换单位 10000 = 1万
 function SLUnitBase(strnum)
