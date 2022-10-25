@@ -41,7 +41,7 @@ function MainMiniMap.main()
     GUI:Layout_setBackGroundColor(MapStatusBG, "#000000")
     GUI:Layout_setBackGroundColorOpacity(MapStatusBG, 100)
 
-    local btn_GM = GUI:Button_Create(parent, "btn_GM", -160, -20, "res/01/010013.png")
+    local btn_GM = GUI:Button_Create(parent, "btn_GM", -160, -20, "res/01/010006.png")
     if btn_GM then
         local tx_switch = GUI:Text_Create(btn_GM, "tx_switch", 50, 20, 18, "#FFFFFF", "G  M")
         if tx_switch then
