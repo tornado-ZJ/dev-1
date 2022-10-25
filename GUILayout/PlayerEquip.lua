@@ -7,7 +7,7 @@ function PlayerEquip.main()
 
     local _ResPath = "res/private/player_main_layer_ui/player_main_layer_ui_mobile/"
 
-    local EquipUI = GUI:Layout_Create(parent, "EquipUI", 0, 0, attachW, attachH, true)
+    local EquipUI = GUI:Layout_Create(parent, "EquipUI", 0, 0, attachW, attachH, false)
     GUI:setTouchEnabled(EquipUI, true)
 
     local BG = GUI:Image_Create(EquipUI, "BG", 0, 0,  _ResPath.."bg_juese_03.png")
@@ -34,7 +34,7 @@ function PlayerEquip.main()
     local PanelPos16 = GUI:Layout_Create(EquipUI, "PanelPos16", 244, 208, 85, 140, false)
     GUI:setAnchorPoint(PanelPos16, 0.5, 0.5)
     GUI:setTouchEnabled(PanelPos16, true)
-
+    --
     -- 勋章
     local PanelPos2 = GUI:Layout_Create(EquipUI, "PanelPos2", 318, 202.5, 52, 52, false)
     GUI:setAnchorPoint(PanelPos2, 0.5, 0.5)
@@ -44,7 +44,7 @@ function PlayerEquip.main()
     GUI:setAnchorPoint(DefaultIcon, 0.5, 0.5)
     local Node2 = GUI:Node_Create(EquipUI, "Node2", 318, 202.5)
     GUI:setTouchEnabled(PanelPos2, true)
-    
+
     -- 项链
     local PanelPos3 = GUI:Layout_Create(EquipUI, "PanelPos3", 318, 260, 52, 52, false)
     GUI:setAnchorPoint(PanelPos3, 0.5, 0.5)
@@ -172,7 +172,7 @@ function PlayerEquip.main()
     GUI:setAnchorPoint(DefaultIcon, 0.5, 0.5)
     local Node15 = GUI:Node_Create(EquipUI, "Node15", 318, 30)
     GUI:setTouchEnabled(PanelPos15, true)
-    
+
     -- 十二生肖
     local BestRingBox = GUI:Layout_Create(EquipUI, "BestRingBox", 318, 310, 46, 36, true)
     GUI:setAnchorPoint(BestRingBox, 0.5, 0.5)

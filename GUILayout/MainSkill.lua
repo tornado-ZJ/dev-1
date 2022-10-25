@@ -177,7 +177,7 @@ function MainSkill.createSkillCell(parent)
     MainSkill.cdImagePath = "res/private/main/Skill/bg_lsxljm_05.png"
     MainSkill.sfxScale = { 0.9, 0.6 } -- {主技能， 其他} 特效缩放比例
     MainSkill.skillIconSize = { { width = 75, height = 75 }, { width = 55, height = 55 } }  -- {主技能， 其他} 技能图标大小
-    MainSkill.skillKey1Bg = "res/03/030013.png"
+    MainSkill.skillKey1Bg = "res/ui/01/Skill/030013.png"
 end
 
 function MainSkill.activeUI(parent)

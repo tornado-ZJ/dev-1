@@ -1,1 +1,0 @@
-<Image id="ImageBg" image="res/private/chat/bg_chuanyin_01.png" x=568 y=300 w=440 h=60 ax=0.5 ay=0.5 />

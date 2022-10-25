@@ -19,6 +19,7 @@ function Bag.Init()
 end
 
 function Bag.main( page )
+    SL:print("---------------bag-------------------")
     local parent  = GUI:Attach_Parent()
     local screenW = SL:GetScreenWidth()
     local screenH = SL:GetScreenHeight()

@@ -50,6 +50,7 @@ function MainMiniMap.main()
         GUI:setContentSize(btn_GM, { width = 100, height = 40 })
         GUI:setAnchorPoint(btn_GM, 0.5, 0.5)
         GUI:addOnClickEvent(btn_GM, function()
+            SL:OpenBagUI()
             GUI:Win_Open("GM")
         end)
     end

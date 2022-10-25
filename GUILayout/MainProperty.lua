@@ -70,10 +70,10 @@ function MainProperty.main()
     MainProperty.Text_exp = Text_exp
 
     -- 转生加点
-    local reinAddBtn = GUI:Button_Create(Panel_bg, "reinAddBtn", 535, 13, "res/private/main/00641.png")
-    GUI:setAnchorPoint(reinAddBtn, 0.5, 0.5)
-    GUI:Button_loadTexturePressed(reinAddBtn, "res/private/main/00641.png")
-    GUI:Button_loadTextureDisabled(reinAddBtn, "res/private/main/00643.png")
+    --local reinAddBtn = GUI:Button_Create(Panel_bg, "reinAddBtn", 535, 13, "res/private/main/00641.png")
+    --GUI:setAnchorPoint(reinAddBtn, 0.5, 0.5)
+    --GUI:Button_loadTexturePressed(reinAddBtn, "res/private/main/00641.png")
+    --GUI:Button_loadTextureDisabled(reinAddBtn, "res/private/main/00643.png")
 
     -- 网络 电池
     local Image_net = GUI:Image_Create(Panel_bg, "Image_net", 84, 11, "res/private/main/Other/1900012501.png")

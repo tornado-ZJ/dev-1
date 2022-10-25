@@ -97,17 +97,17 @@ function PlayerMain.main( skipPage )
     local PageText5 = GUI:Text_Create(Page5, "PageText", 13, 60, 18, "#ffffff", "称\n号")
     GUI:setAnchorPoint(PageText5, 0.5, 0.5)
 
-    -- 神装
-    local Page6 = GUI:Button_Create(PMainUI, "Page6", layoutW, posY, "res/public/1900000641.png")
-    GUI:Button_loadTextureDisabled(Page6, "res/public/1900000640.png")
-    GUI:Button_loadTexturePressed(Page6, "res/public/1900000640.png")
-    GUI:setTouchEnabled(Page6, true)
-    GUI:addOnClickEvent(Page6, function()
-        PlayerMain.PageTo(6)
-    end)
-    posY = posY - distance
-    local PageText6 = GUI:Text_Create(Page6, "PageText", 13, 60, 18, "#ffffff", "神\n装")
-    GUI:setAnchorPoint(PageText6, 0.5, 0.5)
+    ---- 神装
+    --local Page6 = GUI:Button_Create(PMainUI, "Page6", layoutW, posY, "res/public/1900000641.png")
+    --GUI:Button_loadTextureDisabled(Page6, "res/public/1900000640.png")
+    --GUI:Button_loadTexturePressed(Page6, "res/public/1900000640.png")
+    --GUI:setTouchEnabled(Page6, true)
+    --GUI:addOnClickEvent(Page6, function()
+    --    PlayerMain.PageTo(6)
+    --end)
+    --posY = posY - distance
+    --local PageText6 = GUI:Text_Create(Page6, "PageText", 13, 60, 18, "#ffffff", "神\n装")
+    --GUI:setAnchorPoint(PageText6, 0.5, 0.5)
 
     PlayerMain.PageTo(skipPage or 1)
 end
