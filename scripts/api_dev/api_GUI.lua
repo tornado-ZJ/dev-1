@@ -2,300 +2,300 @@
 GUI = {}
 
 
---ÒÆ³ıÆäÏÂËùÓĞ×Ó¿Ø¼ş
----@param widget widget¿Ø¼ş¶ÔÏó
+--ç§»é™¤å…¶ä¸‹æ‰€æœ‰å­æ§ä»¶
+---@param widget widgetæ§ä»¶å¯¹è±¡
 function GUI:removeAllChildren(widget) end
---ÉèÖÃ¿Ø¼şÍ¸Ã÷¶È
---widget	ÊÇ	parent	¿Ø¼ş¶ÔÏó
---value	ÊÇ	int	Í¸Ã÷¶È(0-255)
+--è®¾ç½®æ§ä»¶é€æ˜åº¦
+--widget	æ˜¯	parent	æ§ä»¶å¯¹è±¡
+--value	æ˜¯	int	é€æ˜åº¦(0-255)
 ---@param value parent
 ---@param widget string
 function GUI:setOpacity(widget, value) end
 
---ÉèÖÃ¿Ø¼şËõ·Å
+--è®¾ç½®æ§ä»¶ç¼©æ”¾
 ---@param value integer
 ---@return nil
---widget    ÊÇ    parent    ¿Ø¼ş¶ÔÏó
---value	ÊÇ	int	Ëõ·Å±ÈÀı 1ÎªÕı³£±ÈÀı 0.5ÎªËõĞ¡Ò»°ë 2Îª·Å´óÒ»±¶
+--widget    æ˜¯    parent    æ§ä»¶å¯¹è±¡
+--value	æ˜¯	int	ç¼©æ”¾æ¯”ä¾‹ 1ä¸ºæ­£å¸¸æ¯”ä¾‹ 0.5ä¸ºç¼©å°ä¸€åŠ 2ä¸ºæ”¾å¤§ä¸€å€
 function GUI:setScale(widget, value) end
 
---»ñÈ¡¿Ø¼ş´óĞ¡
+--è·å–æ§ä»¶å¤§å°
 ---@param widget parent
 ---@return size
 function GUI:getContentSize(widget) end
 
---´´½¨Í¼Æ¬¿Ø¼ş
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@param PosX int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param PosY int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param nimg stringÍ¼Æ¬Â·¾¶
----@return widget ´´½¨³É¹¦Ôò·µ»ØĞÂ½¨¿Ø¼şµÄ¶ÔÏó,´´½¨Ê§°ÜÔò·µ»Ø¿Õ
+--åˆ›å»ºå›¾ç‰‡æ§ä»¶
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@param PosX intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param PosY intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param nimg stringå›¾ç‰‡è·¯å¾„
+---@return widget åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ–°å»ºæ§ä»¶çš„å¯¹è±¡,åˆ›å»ºå¤±è´¥åˆ™è¿”å›ç©º
 function GUI:Image_Create(parent, ID, PosX, PosY, nimg) end
 
----´´½¨ÎïÆ·¿ò¿Ø¼ş
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@param x int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param y int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
+---åˆ›å»ºç‰©å“æ¡†æ§ä»¶
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@param x intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param y intæ§ä»¶ä½ç½®çš„çºµåæ ‡
 ---@param itemData itemdata
----@return ´´½¨³É¹¦Ôò·µ»Ø¿Ø¼şµÄ¶ÔÏó´´½¨Ê§°ÜÔò·µ»Ønil
+---@return åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ§ä»¶çš„å¯¹è±¡åˆ›å»ºå¤±è´¥åˆ™è¿”å›nil
 function GUI:ItemShow_Create(parent, ID, x, y, itemData) end
 
 
 
----ÉèÖÃ¿Ø¼şµã»÷ÊÂ¼ş
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value fun»Øµ÷º¯Êı
+---è®¾ç½®æ§ä»¶ç‚¹å‡»äº‹ä»¶
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value funå›è°ƒå‡½æ•°
 function GUI:addOnClickEvent(widget, value) end
 
 
----ÉèÖÃ¿Ø¼şÊÇ·ñ¿ÉÒÔµã»÷
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value boolÊÇ·ñ¿Éµã»÷
+---è®¾ç½®æ§ä»¶æ˜¯å¦å¯ä»¥ç‚¹å‡»
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value boolæ˜¯å¦å¯ç‚¹å‡»
 function GUI:setTouchEnabled(widget, value) end
 
----¹Ø±ÕÃæ°å
----@param parent parent¿Ø¼ş¶ÔÏó
+---å…³é—­é¢æ¿
+---@param parent parentæ§ä»¶å¯¹è±¡
 function GUI:Win_Close(parent) end
 
----ÉèÖÃ¿Ø¼ş´óĞ¡
----@param widget parent¿Ø¼ş¶ÔÏó
+---è®¾ç½®æ§ä»¶å¤§å°
+---@param widget parentæ§ä»¶å¯¹è±¡
 ---@param size size
 function GUI:setContentSize(widget, size) end
 
----´´½¨°´Å¥¿Ø¼ş
----@param _Parent parent¸¸¿Ø¼ş¶ÔÏó
----@param _ID string¿Ø¼şID
----@param _PosX int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param _PosY int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param _nimg stringÍ¼Æ¬Â·¾¶
----@return ´´½¨³É¹¦Ôò·µ»ØĞÂ½¨¿Ø¼şµÄ¶ÔÏó´´½¨Ê§°ÜÔò·µ»Ø¿Õ
+---åˆ›å»ºæŒ‰é’®æ§ä»¶
+---@param _Parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param _ID stringæ§ä»¶ID
+---@param _PosX intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param _PosY intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param _nimg stringå›¾ç‰‡è·¯å¾„
+---@return åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ–°å»ºæ§ä»¶çš„å¯¹è±¡åˆ›å»ºå¤±è´¥åˆ™è¿”å›ç©º
 function GUI:Button_Create( _Parent, _ID, _PosX, _PosY, _nimg) end
 
----ÉèÖÃ°´Å¥Õı³£×´Ì¬Í¼Æ¬
----@param widget parent°´Å¥¶ÔÏó
----@param filepath stringÍ¼Æ¬Â·¾¶
+---è®¾ç½®æŒ‰é’®æ­£å¸¸çŠ¶æ€å›¾ç‰‡
+---@param widget parentæŒ‰é’®å¯¹è±¡
+---@param filepath stringå›¾ç‰‡è·¯å¾„
 function GUI:Button_loadTextureNormal(widget, filepath) end
 
 
----ÉèÖÃ°´Å¥°´ÏÂ×´Ì¬Í¼Æ¬
----@param widget parent°´Å¥¶ÔÏó
----@param filepath stringÍ¼Æ¬Â·¾¶
+---è®¾ç½®æŒ‰é’®æŒ‰ä¸‹çŠ¶æ€å›¾ç‰‡
+---@param widget parentæŒ‰é’®å¯¹è±¡
+---@param filepath stringå›¾ç‰‡è·¯å¾„
 function GUI:Button_loadTexturePressed(widget, filepath) end
 
 
----ÉèÖÃ°´Å¥½ûÓÃ×´Ì¬Í¼Æ¬
----@param widget parent°´Å¥¶ÔÏó
----@param filepath stringÍ¼Æ¬Â·¾¶
+---è®¾ç½®æŒ‰é’®ç¦ç”¨çŠ¶æ€å›¾ç‰‡
+---@param widget parentæŒ‰é’®å¯¹è±¡
+---@param filepath stringå›¾ç‰‡è·¯å¾„
 function GUI:Button_loadTextureDisabled(widget, filepath) end
 
 
----ÉèÖÃ¿Ø¼şÃªµã
----@param widget parent¿Ø¼ş¶ÔÏó
----@param x int¿Ø¼şºáÏòÃªµã
----@param y int¿Ø¼ş×İÏòÃªµã
+---è®¾ç½®æ§ä»¶é”šç‚¹
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param x intæ§ä»¶æ¨ªå‘é”šç‚¹
+---@param y intæ§ä»¶çºµå‘é”šç‚¹
 function GUI:setAnchorPoint(widget, x, y) end
 
----´´½¨ÈİÆ÷¿Ø¼ş
----@param _Parent parent¸¸¿Ø¼ş¶ÔÏó
----@param _ID string¿Ø¼şID
----@param _PosX int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param _PosY int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param _Width int¿Ø¼şµÄ¿í
----@param _Height int¿Ø¼şµÄ¸ß
----@param _isClip boolÊÇ·ñ²Ã¼ô
----@return ´´½¨³É¹¦Ôò·µ»ØĞÂ½¨¿Ø¼şµÄ¶ÔÏó´´½¨Ê§°ÜÔò·µ»Ø¿Õ
+---åˆ›å»ºå®¹å™¨æ§ä»¶
+---@param _Parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param _ID stringæ§ä»¶ID
+---@param _PosX intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param _PosY intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param _Width intæ§ä»¶çš„å®½
+---@param _Height intæ§ä»¶çš„é«˜
+---@param _isClip boolæ˜¯å¦è£å‰ª
+---@return åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ–°å»ºæ§ä»¶çš„å¯¹è±¡åˆ›å»ºå¤±è´¥åˆ™è¿”å›ç©º
 function GUI:Layout_Create( _Parent, _ID, _PosX, _PosY, _Width, _Height, _isClip) end
 
----ÉèÖÃ¿Ø¼şËõ·Å
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value intËõ·Å±ÈÀı
+---è®¾ç½®æ§ä»¶ç¼©æ”¾
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value intç¼©æ”¾æ¯”ä¾‹
 function GUI:setScale(widget, value) end
 
 
----ÉèÖÃÈİÆ÷±³¾°ÑÕÉ«
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value stringÑÕÉ«
+---è®¾ç½®å®¹å™¨èƒŒæ™¯é¢œè‰²
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value stringé¢œè‰²
 function GUI:Layout_setBackGroundColor(widget, value) end
 
 
----ÉèÖÃÈİÆ÷ÊÇ·ñÓĞ±³¾°ÑÕÉ«
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value boolÊÇ·ñÓĞÑÕÉ«
+---è®¾ç½®å®¹å™¨æ˜¯å¦æœ‰èƒŒæ™¯é¢œè‰²
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value boolæ˜¯å¦æœ‰é¢œè‰²
 function GUI:Layout_setBackGroundColorType(widget, value) end
 
 
----ÉèÖÃÈİÆ÷±³¾°Í¸Ã÷¶È
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value intÍ¸Ã÷¶È(0-255)
+---è®¾ç½®å®¹å™¨èƒŒæ™¯é€æ˜åº¦
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value inté€æ˜åº¦(0-255)
 function GUI:Layout_setBackGroundColorOpacity(widget, value) end
 
----ÉèÖÃÍ¼Æ¬¿Ø¼ş¾Å¹¬¸ñ²ÎÊı
----@param widget parent¿Ø¼ş¶ÔÏó
----@param scale9l int×ó±ß±ÈÀı
----@param scale9r intÓÒ±ß±ÈÀı
----@param scale9t intÉÏ±ß±ÈÀı
----@param scale9b intÏÂ±ß±ÈÀı
+---è®¾ç½®å›¾ç‰‡æ§ä»¶ä¹å®«æ ¼å‚æ•°
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param scale9l intå·¦è¾¹æ¯”ä¾‹
+---@param scale9r intå³è¾¹æ¯”ä¾‹
+---@param scale9t intä¸Šè¾¹æ¯”ä¾‹
+---@param scale9b intä¸‹è¾¹æ¯”ä¾‹
 function GUI:Image_setScale9Slice(widget, scale9l, scale9r, scale9t, scale9b) end
 
 
----ÉèÖÃÁĞ±íÈİÆ÷ÊÇ·ñ²Ã¼ô
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value boolÊÇ·ñ²Ã¼ô
+---è®¾ç½®åˆ—è¡¨å®¹å™¨æ˜¯å¦è£å‰ª
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value boolæ˜¯å¦è£å‰ª
 function GUI:ListView_setClippingEnabled(widget, value) end
 
 
----´´½¨ÁĞ±íÈİÆ÷
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@param x int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param y int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param width int¿Ø¼şµÄ¿í
----@param height int¿Ø¼şµÄ¸ß
----@param direction int»¬¶¯·½Ïò1´¹Ö±2Ë®Æ½
----@return ´´½¨³É¹¦Ôò·µ»ØĞÂ½¨¿Ø¼şµÄ¶ÔÏó´´½¨Ê§°ÜÔò·µ»Ø¿Õ
+---åˆ›å»ºåˆ—è¡¨å®¹å™¨
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@param x intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param y intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param width intæ§ä»¶çš„å®½
+---@param height intæ§ä»¶çš„é«˜
+---@param direction intæ»‘åŠ¨æ–¹å‘1å‚ç›´2æ°´å¹³
+---@return åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ–°å»ºæ§ä»¶çš„å¯¹è±¡åˆ›å»ºå¤±è´¥åˆ™è¿”å›ç©º
 function GUI:ListView_Create(parent, ID, x, y, width, height, direction) end
 
 
----»ñÈ¡¿Ø¼ş¶ÔÏó
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@return »ñÈ¡³É¹¦Ôò·µ»ØĞÂ½¨¿Ø¼şµÄ¶ÔÏó»ñÈ¡Ê§°ÜÔò·µ»Ø¿Õ
+---è·å–æ§ä»¶å¯¹è±¡
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@return è·å–æˆåŠŸåˆ™è¿”å›æ–°å»ºæ§ä»¶çš„å¯¹è±¡è·å–å¤±è´¥åˆ™è¿”å›ç©º
 function GUI:GetWindow(parent, ID) end
 
----ÉèÖÃ°´Å¥ÊÇ·ñ½ûÓÃÍØÕ¹
----@param widget parent°´Å¥¶ÔÏó
----@param value boolÊÇ·ñ½ûÓÃ
+---è®¾ç½®æŒ‰é’®æ˜¯å¦ç¦ç”¨æ‹“å±•
+---@param widget parentæŒ‰é’®å¯¹è±¡
+---@param value boolæ˜¯å¦ç¦ç”¨
 function GUI:Button_setBrightEx(widget, value) end
 
 
 
----´´½¨ÎÄ±¾¿Ø¼ş
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@param x int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param y int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param fontSize int×ÖÌå´óĞ¡
----@param fontColor stringÑÕÉ«
----@param str stringÎÄ±¾ÄÚÈİ
----@return ´´½¨³É¹¦Ôò·µ»ØĞÂ½¨¿Ø¼şµÄ¶ÔÏó´´½¨Ê§°ÜÔò·µ»Ø¿Õ
+---åˆ›å»ºæ–‡æœ¬æ§ä»¶
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@param x intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param y intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param fontSize intå­—ä½“å¤§å°
+---@param fontColor stringé¢œè‰²
+---@param str stringæ–‡æœ¬å†…å®¹
+---@return åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ–°å»ºæ§ä»¶çš„å¯¹è±¡åˆ›å»ºå¤±è´¥åˆ™è¿”å›ç©º
 function GUI:Text_Create(parent, ID, x, y, fontSize, fontColor, str) end
 
----»ñÈ¡ÊäÈë¿ò¿Ø¼şÎÄ±¾
----@param widget parent¿Ø¼ş¶ÔÏó
+---è·å–è¾“å…¥æ¡†æ§ä»¶æ–‡æœ¬
+---@param widget parentæ§ä»¶å¯¹è±¡
 ---@return str/int
 function GUI:TextInput_getString(widget) end
 
----ÉèÖÃÎÄ±¾¿Ø¼şµÄÎÄ±¾
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value stringÎÄ±¾
+---è®¾ç½®æ–‡æœ¬æ§ä»¶çš„æ–‡æœ¬
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value stringæ–‡æœ¬
 function GUI:Text_setString(widget, value) end
 
----´´½¨¸»ÎÄ±¾¿Ø¼ş
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@param x int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param y int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param str stringÎÄ±¾ÄÚÈİ
----@param width int¿Ø¼şµÄ¿í
----@param Size int×ÖÌå´óĞ¡
----@param Color intÑÕÉ«
----@param vspace int¼ä¾à
----@param hyperlinkCB fun³¬Á´»Øµ÷
----@return ´´½¨³É¹¦Ôò·µ»ØĞÂ½¨¿Ø¼şµÄ¶ÔÏó´´½¨Ê§°ÜÔò·µ»Ø¿Õ
+---åˆ›å»ºå¯Œæ–‡æœ¬æ§ä»¶
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@param x intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param y intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param str stringæ–‡æœ¬å†…å®¹
+---@param width intæ§ä»¶çš„å®½
+---@param Size intå­—ä½“å¤§å°
+---@param Color inté¢œè‰²
+---@param vspace inté—´è·
+---@param hyperlinkCB funè¶…é“¾å›è°ƒ
+---@return åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ–°å»ºæ§ä»¶çš„å¯¹è±¡åˆ›å»ºå¤±è´¥åˆ™è¿”å›ç©º
 function GUI:RichText_Create(parent, ID, x, y, str, width, Size, Color, vspace, hyperlinkCB) end
 
----ÉèÖÃ´ò¿ªÃæ°åÌØĞ§(Ğ¡-´ó)1
----@param widget parent¸¸¿Ø¼ş¶ÔÏó
+---è®¾ç½®æ‰“å¼€é¢æ¿ç‰¹æ•ˆ(å°-å¤§)1
+---@param widget parentçˆ¶æ§ä»¶å¯¹è±¡
 function GUI:Timeline_Window1(widget) end
----ÉèÖÃ´ò¿ªÃæ°åÌØĞ§(Ğ¡-´ó)2
----@param widget parent¸¸¿Ø¼ş¶ÔÏó
+---è®¾ç½®æ‰“å¼€é¢æ¿ç‰¹æ•ˆ(å°-å¤§)2
+---@param widget parentçˆ¶æ§ä»¶å¯¹è±¡
 function GUI:Timeline_Window2(widget) end
----ÉèÖÃ´ò¿ªÃæ°åÌØĞ§(Ğ¡-´ó)3
----@param widget parent¸¸¿Ø¼ş¶ÔÏó
+---è®¾ç½®æ‰“å¼€é¢æ¿ç‰¹æ•ˆ(å°-å¤§)3
+---@param widget parentçˆ¶æ§ä»¶å¯¹è±¡
 function GUI:Timeline_Window3(widget) end
----ÉèÖÃ´ò¿ªÃæ°åÌØĞ§(´ó-Ğ¡)4
----@param widget parent¸¸¿Ø¼ş¶ÔÏó
+---è®¾ç½®æ‰“å¼€é¢æ¿ç‰¹æ•ˆ(å¤§-å°)4
+---@param widget parentçˆ¶æ§ä»¶å¯¹è±¡
 function GUI:Timeline_Window4(widget) end
----ÉèÖÃ´ò¿ªÃæ°åÌØĞ§(´ó-Ğ¡)5
----@param widget parent¸¸¿Ø¼ş¶ÔÏó
+---è®¾ç½®æ‰“å¼€é¢æ¿ç‰¹æ•ˆ(å¤§-å°)5
+---@param widget parentçˆ¶æ§ä»¶å¯¹è±¡
 function GUI:Timeline_Window5(widget) end
----ÉèÖÃ´ò¿ªÃæ°åÌØĞ§(´ó-Ğ¡)6
----@param widget parent¸¸¿Ø¼ş¶ÔÏó
+---è®¾ç½®æ‰“å¼€é¢æ¿ç‰¹æ•ˆ(å¤§-å°)6
+---@param widget parentçˆ¶æ§ä»¶å¯¹è±¡
 function GUI:Timeline_Window6(widget) end
 
----´´½¨ÌØĞ§¿Ø¼ş
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@param x int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param y int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param effecttype ÌØĞ§ÀàĞÍ0ÌØĞ§1NPC2¹ÖÎï3¼¼ÄÜ4ÈËÎï5ÎäÆ÷6³á°ò7·¢ĞÍ
----@param effectid intÌØĞ§ID
----@param sex intĞÔ±ğ
----@param act ÌØĞ§¶¯×÷0´ı»ú1×ß2¹¥»÷3Ê©·¨4ËÀÍö5ÅÜ²½
----@param dir ÌØĞ§·½Ïò0ÉÏ1ÓÒÉÏ2ÓÒ
----@param speed int²¥·ÅËÙ¶È
+---åˆ›å»ºç‰¹æ•ˆæ§ä»¶
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@param x intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param y intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param effecttype ç‰¹æ•ˆç±»å‹0ç‰¹æ•ˆ1NPC2æ€ªç‰©3æŠ€èƒ½4äººç‰©5æ­¦å™¨6ç¿…è†€7å‘å‹
+---@param effectid intç‰¹æ•ˆID
+---@param sex intæ€§åˆ«
+---@param act ç‰¹æ•ˆåŠ¨ä½œ0å¾…æœº1èµ°2æ”»å‡»3æ–½æ³•4æ­»äº¡5è·‘æ­¥
+---@param dir ç‰¹æ•ˆæ–¹å‘0ä¸Š1å³ä¸Š2å³
+---@param speed intæ’­æ”¾é€Ÿåº¦
 function GUI:Effect_Create(parent, ID, x, y, effecttype, effectid, sex, act, dir, speed) end
 
----ÉèÖÃÌØĞ§²¥·Å
----@param widget parent¿Ø¼ş¶ÔÏó
----@param act ÌØĞ§¶¯×÷0´ı»ú1×ß2¹¥»÷3Ê©·¨4ËÀÍö5ÅÜ²½
----@param dir ÌØĞ§·½Ïò0ÉÏ1ÓÒÉÏ2ÓÒ
----@param isLoop boolÊÇ·ñÑ­»·
----@param speed int²¥·ÅËÙ¶È
----@param isSequence intÊÇ·ñÔİÍ£×îºóÒ»Ö¡
+---è®¾ç½®ç‰¹æ•ˆæ’­æ”¾
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param act ç‰¹æ•ˆåŠ¨ä½œ0å¾…æœº1èµ°2æ”»å‡»3æ–½æ³•4æ­»äº¡5è·‘æ­¥
+---@param dir ç‰¹æ•ˆæ–¹å‘0ä¸Š1å³ä¸Š2å³
+---@param isLoop boolæ˜¯å¦å¾ªç¯
+---@param speed intæ’­æ”¾é€Ÿåº¦
+---@param isSequence intæ˜¯å¦æš‚åœæœ€åä¸€å¸§
 function GUI:Effect_play(widget, act, dir, isLoop, speed, isSequence) end
 
----´´½¨ÒÕÊõ×Ö¿Ø¼ş
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@param x int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param y int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param value intµ±Ç°ÏÔÊ¾Êı×Ö
----@param charMapFile stringÒÕÊõ×ÖÍ¼Æ¬Â·¾¶
----@param Width int×Ö·û¿í
----@param Height int×Ö·û¸ß
----@param startCharMap intÊ××Ö·û
----@return ´´½¨³É¹¦Ôò·µ»ØĞÂ½¨°´Å¥¿Ø¼şµÄ¶ÔÏó
+---åˆ›å»ºè‰ºæœ¯å­—æ§ä»¶
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@param x intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param y intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param value intå½“å‰æ˜¾ç¤ºæ•°å­—
+---@param charMapFile stringè‰ºæœ¯å­—å›¾ç‰‡è·¯å¾„
+---@param Width intå­—ç¬¦å®½
+---@param Height intå­—ç¬¦é«˜
+---@param startCharMap inté¦–å­—ç¬¦
+---@return åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ–°å»ºæŒ‰é’®æ§ä»¶çš„å¯¹è±¡
 function GUI:TextAtlas_Create(parent, ID, x, y, stringValue, charMapFile, Width, Height, startCharMap) end
 
 
----ÉèÖÃÒÕÊõ×Ö¿Ø¼şÄÚÈİ
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value intÄÚÈİ
+---è®¾ç½®è‰ºæœ¯å­—æ§ä»¶å†…å®¹
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value intå†…å®¹
 function GUI:TextAtlas_setString(widget, value) end
 
----»ñÈ¡ÒÕÊõ×Ö¿Ø¼şÄÚÈİ
----@param widget parent¿Ø¼ş¶ÔÏó
----@return »ñÈ¡³É¹¦Ôò·µ»ØÒÕÊõ×ÖÄÚÈİ
+---è·å–è‰ºæœ¯å­—æ§ä»¶å†…å®¹
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@return è·å–æˆåŠŸåˆ™è¿”å›è‰ºæœ¯å­—å†…å®¹
 function GUI:TextAtlas_getString(widget) end
 
----ÉèÖÃÁĞ±íÈİÆ÷¿Ø¼ş¼ä¸ô
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value int¼ä¸ô
+---è®¾ç½®åˆ—è¡¨å®¹å™¨æ§ä»¶é—´éš”
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value inté—´éš”
 function GUI:ListView_setItemsMargin(widget, value) end
 
----´´½¨¸´Ñ¡¿ò¿Ø¼ş
----@param parent parent¸¸¿Ø¼ş¶ÔÏó
----@param ID string¿Ø¼şID
----@param x int¿Ø¼şÎ»ÖÃµÄºá×ø±ê
----@param y int¿Ø¼şÎ»ÖÃµÄ×İ×ø±ê
----@param nimg stringÍ¼Æ¬±³¾°Í¼Æ¬
----@param pimg string´ò¹´Í¼Æ¬Â·¾¶
----@return ´´½¨³É¹¦Ôò·µ»ØĞÂ½¨¿Ø¼şµÄ¶ÔÏó´´½¨Ê§°ÜÔò·µ»Ø¿Õ
+---åˆ›å»ºå¤é€‰æ¡†æ§ä»¶
+---@param parent parentçˆ¶æ§ä»¶å¯¹è±¡
+---@param ID stringæ§ä»¶ID
+---@param x intæ§ä»¶ä½ç½®çš„æ¨ªåæ ‡
+---@param y intæ§ä»¶ä½ç½®çš„çºµåæ ‡
+---@param nimg stringå›¾ç‰‡èƒŒæ™¯å›¾ç‰‡
+---@param pimg stringæ‰“å‹¾å›¾ç‰‡è·¯å¾„
+---@return åˆ›å»ºæˆåŠŸåˆ™è¿”å›æ–°å»ºæ§ä»¶çš„å¯¹è±¡åˆ›å»ºå¤±è´¥åˆ™è¿”å›ç©º
 function GUI:CheckBox_Create(parent, ID, x, y, nimg, pimg) end
 
 ---Text_setTextColor
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value stringÑÕÉ«
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value stringé¢œè‰²
 function GUI:Text_setTextColor(widget, value) end
 
----½«¿Ø¼ş´Ó¸¸¿Ø¼şÒÆ³ı
----@param widget parent	¿Ø¼ş¶ÔÏó
+---å°†æ§ä»¶ä»çˆ¶æ§ä»¶ç§»é™¤
+---@param widget parent	æ§ä»¶å¯¹è±¡
 function GUI:removeFromParent(widget) end
 
----ÉèÖÃ¿Ø¼şÊÇ·ñÏÔÊ¾
----@param widget parent¿Ø¼ş¶ÔÏó
----@param value boolÊÇ·ñÏÔÊ¾
+---è®¾ç½®æ§ä»¶æ˜¯å¦æ˜¾ç¤º
+---@param widget parentæ§ä»¶å¯¹è±¡
+---@param value boolæ˜¯å¦æ˜¾ç¤º
 function GUI:setVisible(widget, value) end

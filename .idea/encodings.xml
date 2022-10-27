@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/GUILayout/A/免费会员.lua" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/GUILayout/A/沙城捐献.lua" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/GUILayout/A/狂暴.lua" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/GUILayout/A/狂暴之力.lua" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/GUILayout/A/称号升级.lua" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/GUILayout/A/装备强化.lua" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/GUILayout/A/装备强星.lua" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/GUILayout/A/转生之力.lua" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/scripts/api/api.lua" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/scripts/api_dev/api_GUI.lua" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
