@@ -20,7 +20,7 @@ kuangbao.main = function()
         GUI:Win_Close(parent)
     end)
 
-    -- 容器111
+    -- 容器
     local FrameLayout = GUI:Layout_Create(parent, "FrameLayout", screenW / 2, screenH / 2, layoutW, layoutH)
     GUI:setAnchorPoint(FrameLayout, { x = 0.5, y = 0.5 })
 
