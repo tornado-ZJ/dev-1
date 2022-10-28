@@ -131,6 +131,21 @@ KuangBao.createUI = function()
         SL:SubmitForm("A/狂暴", "kaiqikuangbao", cur_chenghao)
     end)
 
+    local Button_2 = GUI:Button_Create(parent, "Button_2", 442.00, 145.00, "res/ui/button/3.png")
+    GUI:Button_loadTexturePressed(Button_2, "res/ui/button/3-1.png")
+    GUI:Button_setTitleColor(Button_2, "#ffffff")
+    GUI:Button_setTitleFontSize(Button_2, 14)
+    GUI:Button_setTitleText(Button_2, "进入地图")
+    GUI:setTouchEnabled(Button_2, true)
+    GUI:setTag(Button_2, -1)
+    GUI:addOnClickEvent(Button_2, function()
+        if cur_chenghao < lastPage then
+            SL:ShowSystemTips("未开启".. cfg_kuangbao[lastPage].name .. "，开启后可进入")
+            return
+        end
+        SL:SubmitForm("A/狂暴", "jinruditu", lastPage)
+    end)
+
     KuangBao.updateUI()
 
 end
@@ -153,6 +168,4 @@ KuangBao.page = function(index)
 --    切换特效
     GUI:removeFromParent(GUI:GetWindow(parent, "Effect_kuangbao"))
     GUI:Effect_Create(parent, "Effect_kuangbao", 500,400,0,cfg_kuangbao[index].effectid, 0,0,0,1)
-
-
 end
