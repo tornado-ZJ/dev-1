@@ -18,6 +18,11 @@ function SLUnitBase(strnum)
     return strnum
 end
 
+color = {
+    [1] = "#787974",
+    [2] = "#fffacb"
+}
+
 
 
 --元宝：100/1000 （strdes：Anum/Bnum）

@@ -194,8 +194,8 @@ local config = {
 		sCanMove = 0,
 		sMoveTime = 0,
 	},
-	[16] = { 
-		id = 16,
+	[50] = { 
+		id = 50,
 		sScript = "地图一",
 		sMapName = 23,
 		sX = 100,
@@ -207,8 +207,8 @@ local config = {
 		sCanMove = 0,
 		sMoveTime = 0,
 	},
-	[17] = { 
-		id = 17,
+	[51] = { 
+		id = 51,
 		sScript = "地图二",
 		sMapName = 23,
 		sX = 104,
@@ -220,8 +220,8 @@ local config = {
 		sCanMove = 0,
 		sMoveTime = 0,
 	},
-	[18] = { 
-		id = 18,
+	[52] = { 
+		id = 52,
 		sScript = "地图三",
 		sMapName = 23,
 		sX = 108,
@@ -233,8 +233,8 @@ local config = {
 		sCanMove = 0,
 		sMoveTime = 0,
 	},
-	[19] = { 
-		id = 19,
+	[53] = { 
+		id = 53,
 		sScript = "地图四",
 		sMapName = 23,
 		sX = 112,
@@ -246,8 +246,8 @@ local config = {
 		sCanMove = 0,
 		sMoveTime = 0,
 	},
-	[20] = { 
-		id = 20,
+	[54] = { 
+		id = 54,
 		sScript = "地图五",
 		sMapName = 23,
 		sX = 116,
